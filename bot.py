@@ -14,7 +14,7 @@ SYMBOL = 'CVNA'  # Stock symbol to trade
 QUANTITY = 10  # Number of shares to trade
 STOP_LOSS = 1.25  # Stop loss percentage (1.25 = 25% stop loss)
 TAKE_PROFIT = 7 / QUANTITY  # Take profit amount per stock
-LIMIT_ORDER_OFFSET = 0.01  # Offset for the limit order price from the current price
+LIMIT_ORDER_OFFSET = 0.05  # Offset for the limit order price from the current price
 
 # Initialize Alpaca API
 api = tradeapi.REST(ALPACA_API_KEY, ALPACA_SECRET_KEY, base_url=BASE_URL, api_version='v2')
