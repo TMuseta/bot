@@ -13,7 +13,7 @@ orbs:
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/configuration-reference/#jobs
 jobs:
-  build-and-test:
+  build:
     docker:
       - image: cimg/python:3.10.4
     # Checkout the code as the first step. This is a dedicated CircleCI step.
@@ -40,7 +40,7 @@ workflows:
               only:
                 - main
     jobs:
-        - build-and-test
+        - build
 
   scheduled-workflow-1530:
     triggers:
@@ -51,7 +51,7 @@ workflows:
               only:
                   - main
     jobs:
-        - build-and-test
+        - build
 
   scheduled-workflow-2000:
     triggers:
@@ -62,7 +62,7 @@ workflows:
               only:
                 - main
     jobs:
-        - build-and-test
+        - build
 
   scheduled-workflow-0100:
     triggers:
@@ -73,7 +73,7 @@ workflows:
               only:
                 - main
     jobs:
-        - build-and-test
+        - build
 
   scheduled-workflow-0400:
     triggers:
@@ -84,7 +84,7 @@ workflows:
               only:
                 - main
     jobs:
-        - build-and-test
+        - build
 
   scheduled-workflow-0700:
     triggers:
@@ -95,11 +95,11 @@ workflows:
               only:
                 - main
     jobs:
-      - build-and-test
+      - build
 
   commit-workflow:
     jobs:
-        - build-and-test:
+        - build:
             filters:
                 branches:
                     only:
