@@ -11,7 +11,7 @@ BASE_URL = 'https://api.alpaca.markets'  # Paper trading URL, change to 'https:/
 
 # Trading parameters
 SYMBOL = 'CVNA'  # Stock symbol to trade
-QUANTITY = 10  # Number of shares to trade
+QUANTITY = 5  # Number of shares to trade
 STOP_LOSS = 1.25  # Stop loss percentage (1.25 = 25% stop loss)
 TAKE_PROFIT = 7 / QUANTITY  # Take profit amount per stock
 LIMIT_ORDER_OFFSET = 0.05  # Offset for the limit order price from the current price
