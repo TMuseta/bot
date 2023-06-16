@@ -5,9 +5,9 @@ import time
 from tabulate import tabulate
 
 # Alpaca API credentials
-ALPACA_API_KEY = 'PK02XZUNCN2UTBJM9G2S'
-ALPACA_SECRET_KEY = 'wghm5IHeKF9GasRCdNEYW9BmorBSZGej9rMHegoh'
-BASE_URL = 'https://paper-api.alpaca.markets'  # Paper trading URL, change to 'https://api.alpaca.markets' for live trading
+ALPACA_API_KEY = 'AK52BG2PJZIKP3AZHFCJ'
+ALPACA_SECRET_KEY = 'DrP5tL91qQrBjSuSfrG8NW8quJLF5nw4zT1hNPbn'
+BASE_URL = 'https://api.alpaca.markets'  # Paper trading URL, change to 'https://api.alpaca.markets' for live trading
 
 # Trading parameters
 SYMBOL = 'CVNA'  # Stock symbol to trade
